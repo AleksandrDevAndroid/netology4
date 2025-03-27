@@ -73,7 +73,7 @@ public class Main {
         if (earning >= 1000) {
             tax = earning * 6 / 100;
         }
-
         return tax;
     }
 }
+
