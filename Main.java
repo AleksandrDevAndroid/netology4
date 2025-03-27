@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("Введите сумму расходов:");
                     String spendingMoneyStr = sc.nextLine();
                     int spendingMoney = Integer.parseInt(spendingMoneyStr);
-                    spendings -= spendingMoney;
+                    spendings += spendingMoney;
                     break;
                 case 3:
                     int taxEarningMinusSpeeding = taxEarningsMinusSpendings(earnings,spendings);
@@ -73,9 +73,7 @@ public class Main {
         if (earning >= 1000) {
             tax = earning * 6 / 100;
         }
-        else {
-            tax = 60;
-        }
+
         return tax;
     }
 }
